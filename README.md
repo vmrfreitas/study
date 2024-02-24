@@ -1,10 +1,6 @@
 # study
 Repo to keep some programming study records
 
-
-
-Current goal is to read [this code](https://keithschwarz.com/interesting/code/?dir=fibonacci-heap) and understand it fully.
-
 ## Some takeaways 
 
 In my experience, real interview problems tend to be harder than the ones on mock interviews.
