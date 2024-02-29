@@ -1,6 +1,7 @@
 # study
 Repo to keep some programming study records.
 Comments on code are for me to understand myself faster later when reading it.
+I do it in Python because I feel like it is easier with this kind of problems, even though I'm still not used to the best Python idioms yet.
 
 ## Some takeaways 
 
