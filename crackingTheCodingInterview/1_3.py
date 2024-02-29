@@ -13,7 +13,7 @@ urlify()
 print(input_string)
 
 ## not sure about creating two strings tho...
-## will check results
+## will check the solution
 
 # ok so you have two iterables, both going backwards through the string 
 # one starts at the end of the text, before the trailing spaces, and goes character by character checking for spaces

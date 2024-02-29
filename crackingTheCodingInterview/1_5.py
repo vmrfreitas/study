@@ -1,7 +1,7 @@
 string1 = "strog bem massa"
 string2 = "string bem massa"
 
-def one_away():
+def one_away(): # goes through the strings differently depending on which one is smaller
     edits = 0
     length_diff = len(string1) - len(string2) 
     if(abs(length_diff) > 1):
@@ -19,10 +19,9 @@ def one_away():
     elif(length_diff>0):
         j = 0
         for i in range(len(string1)):
-            print(str(i) +' and ' +str(j))
-            if string1[i] != string2[j]:
+            if string1[i] != string2[j]: # if the letters are different then we add the counter and move forward on only one string
                 edits += 1
-            else: 
+            else: # if the letters are the same then we move forward on both strings
                 j+=1
            
 

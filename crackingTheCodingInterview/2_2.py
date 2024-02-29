@@ -11,7 +11,7 @@ def return_kth_to_last(k):
         list_length+=1
     index = 0
     for node in input_list:
-        if(index == list_length-k-1):
+        if(index == list_length-k-1): # just stop when we reach the k to last element
             return node
         index+=1 
 

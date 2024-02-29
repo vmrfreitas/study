@@ -10,14 +10,15 @@
 
 from math import inf
 
-
-graph = [[0,6,0,1,0],[6,0,5,2,2],[0,5,0,0,5],[1,2,0,0,1],[0,2,5,1,0]]
+# representation of the graph drawn above as a adjacency matrix
+# A is 0, B is 1, C is 2, D is 3, E is 4
+graph = [[0,6,0,1,0],[6,0,5,2,2],[0,5,0,0,5],[1,2,0,0,1],[0,2,5,1,0]] 
 
 shortest_distance_from_A = [0, inf, inf, inf, inf]
 previous_vertexes = [-1,-1,-1,-1,-1]
-start_vertex = 0 # A
+start_vertex = 0 # we are starting in the A vertex for this example
 visited = set()
-unvisited = [0,1,2,3,4]
+unvisited = [0,1,2,3,4] # add all nodes to the unvisited list
 
 while(len(visited)!=len(graph)):
     visiting_vertex = -1

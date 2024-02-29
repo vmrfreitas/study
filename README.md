@@ -1,5 +1,6 @@
 # study
-Repo to keep some programming study records
+Repo to keep some programming study records.
+Comments on code are for me to understand myself faster later when reading it.
 
 ## Some takeaways 
 
