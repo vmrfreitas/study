@@ -61,8 +61,9 @@ def checkBST(root):
             tree_to_list(node.right)
 
     tree_to_list(root)
-
-    sorted_no_repeats = sorted(list(dict.fromkeys(tree_list))) # reviewing it now I realize that instead of dict.fromkeys() I could just use set(), but whatever
+    
+    # reviewing it now I realize that instead of dict.fromkeys() I could just use set(), but whatever
+    sorted_no_repeats = sorted(list(dict.fromkeys(tree_list))) 
     
     if sorted_no_repeats == tree_list:
         return True
