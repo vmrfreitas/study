@@ -54,3 +54,25 @@ class Solution:
             
         return result
             
+
+from collections import defaultdict
+
+def to_adjacency_map(edge_list):
+    # Automatically creates an empty list if the key is missing
+    adj_map = defaultdict(list)
+    for u, v in edge_list:
+        adj_map[u].append(v)
+    return adj_map
+
+
+def bfs(adj_map, start):
+    visited = set()
+    queue = []
+    queue.append(start)
+    while(queue):
+        current = queue.pop(0)
+        print("visiting:", current)
+        visited.add(current)
+        for child in adj_map[current]:
+            if child not in visited:
+                queue.append(child)
